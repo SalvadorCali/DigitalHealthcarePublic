@@ -1,0 +1,98 @@
+name: thesis
+description: A new Flutter project.
+
+# The following line prevents the package from being accidentally published to
+# pub.dev using `pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^1.0.2
+  firebase_core: ^1.0.2 # per sincronizzare con Firebase
+  firebase_auth: ^1.1.0 # per gestire autenticazione
+  cloud_firestore: ^1.0.3 # per usare database
+  path_provider: ^2.0.1 # per ottenere cartelle di sistema
+  pdf: ^3.0.1 # per generazione di pdf
+  qr_flutter: ^4.0.0 # per generazione di qr code
+  image_gallery_saver: '^1.6.8' # per salvataggio qr code in galleria
+  fluttertoast: ^7.1.6 # per mostrare toast
+  open_file: ^3.1.0 # per aprire i files in maniera nativa
+  downloads_path_provider: ^0.1.0 # per scaricare files nella cartella Download
+  permission_handler: ^6.1.1 # per gestire permessi di download
+  flutter_barcode_scanner: ^1.0.2 # per effettuare scan di QR Code
+  url_launcher: ^6.0.3 # per aprire contatti di emergenza
+  humanitarian_icons: ^0.1.0 # per icons speciali
+  printing: ^5.0.4 # per condivisione dei file pdf
+  path: ^1.8.0 # per unire due percorsi
+  universal_html: ^2.0.8 # per gestire pdf via web
+  material_floating_search_bar: ^0.3.4 # per la barra di ricerca
+  flutter_login: ^1.1.0 # per la schermata di login
+  unicorndial: ^1.1.5 # per creare speed dial
+  http: ^0.13.3 # per ottenere dal web le immagini per i pdf
+
+dev_dependencies:
+  change_app_package_name: ^0.1.2
+  flutter_test:
+    sdk: flutter
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - assets/logos/
+    - assets/images/
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/assets-and-images/#resolution-aware.
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/assets-and-images/#from-packages
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/custom-fonts/#from-packages
